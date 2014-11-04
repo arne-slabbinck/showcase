@@ -1,0 +1,297 @@
+#login {
+    text-align:right;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** STRUCTUUR en LAYOUT ***/
+
+.wikkel {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+#topmenu {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    
+}
+
+#topmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#topmenu ul li {
+    float:left;
+}
+
+
+#topmenu ul li a {
+    display: block;
+    padding: 0.3em 0.8em;              /* 6px 8px */
+    border-right: 1px solid #b1b1b1;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #7c7c7c;
+}
+
+#topmenu ul li a.laatstemenu {
+    border-right: 0px;
+}
+
+.top {
+    position:relative;
+}
+
+#logo {
+    float: left;
+
+    padding:0;
+}
+
+
+.inhoud img {
+    float:left;
+    margin-top:-50px;
+    margin-right:2em;
+    width:230px;
+    height:auto;
+}
+
+header nav {
+    float: right;
+}
+
+.titel img {
+    float:right;
+}
+
+
+
+.kol {
+
+    float:left;
+    width:30%;
+}
+
+.een {
+    float:left;
+}
+
+.twee {
+    margin:0px 20px;
+}
+
+.nieuws img {
+    float:right;
+}
+
+.titel img {
+    border: 5px solid #E9DCE9;
+    margin: 1em 1em;
+    width:300px;
+    height:auto;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.inhoud img {
+    border: 5px solid #E9DCE9; 
+}
+
+.bigtop {
+    padding: 1em 0 0.5em 0;
+}
+
+footer {
+	clear: both;
+	padding: 1em 3em 0;
+	border-top: 1px solid silver;
+	
+}
+
+.titel {
+    position:relative;
+    padding: 0 0 3em 0;
+}
+
+/* Floaten van List */
+
+.inhoud ul {
+ float:left;   
+}
+
+.inhoud ul li{
+    float:left;
+    width:28%;
+    height:130px;
+    padding: 0 2em 0 1em;
+}
+
+
+
+
+
+/***  TYPOGRAFIE ***/
+
+.container {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;	
+}
+
+header a {
+    font-weight:bold;
+}
+
+header ul {
+    margin: 0.5em;
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+
+}
+
+body {
+    font-family:"Verdana", sans-serif;
+    font-size:100%
+}
+
+p.schuin {
+    font-style:italic;
+}
+
+em {
+    color:#8c3d96;
+    font-weight:bold;
+    font-style:normal;
+}
+
+
+
+
+
+
+/***  KLEUREN ***/
+
+
+h1, h2 {
+    color:#7ea107;
+}
+
+h1 {
+    font-size:3em;
+}
+
+.titelinhoud h2 {
+    color:black;
+    font-style:italic;
+}
+
+.inhoud ul {
+    list-style-image:url(../../img/check.png);
+}
+
+a {
+    color:#4C86CF;
+}
+
+#login {
+    color:white;
+}
+
+input[type=submit],
+button {
+    background-color:#6d9207;
+    color:white; 
+    border:none;
+    width:120px;
+    height:22px;
+    font-weight:bold;
+}
+
+header a {
+    color:#52463f;
+}
+
+
+a:hover {
+    color:#058;
+}
+
+#login {
+    background-color: #8FB209;
+}
+
+.container, .bigtop {
+    background-color:#fbfaf8;
+
+}
+
+
+
+
+.biginhoud {
+    background-color:#ece8e5;
+    border-top: 1px solid #dbdad8;
+    border-bottom: 1px solid #dbdad8;
+}
+
+.titelinhoud {
+    border-top: 1px solid #dbdad8;
+}
+
+#topmenu ul li a:hover,
+#topmenu ul li a:active
+{
+    
+    text-decoration:none;
+    background:#7c7c7c;
+    color:white;
+}
+
+
+
+/*
+div, nav, header, footer, article {
+    outline:1px dashed red;
+}
+
+*/
+
+
+
+
+/* clearfix hack */
+
+.clearFix:before, .clearFix:after {
+    content: " ";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+/* enkel voor IE 6/7 */
+
+.clearFix {
+    *zoom: 1;
+}
+

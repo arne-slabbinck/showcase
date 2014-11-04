@@ -1,0 +1,631 @@
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../fonts/sourcesanspro-semibold-webfont.eot');
+    src: url('../fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+   
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+ 
+
+}
+
+@font-face {
+    font-family: 'source_sans_problack';
+    src: url('../fonts/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+#login {
+    text-align:right;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'source_sans_proregular';
+    color:#333333;
+}
+
+
+
+
+/*** STRUCTUUR en LAYOUT ***/
+
+.wikkel {
+    width: 960px;
+    margin: 0 auto;
+
+}
+
+
+
+#topmenu {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+
+}
+
+#topmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#topmenu ul li {
+    float:left;
+}
+
+
+#topmenu ul li a {
+    display: block;
+    padding: 0.3em 0.8em;              /* 6px 8px */
+    border-right: 1px solid #b1b1b1;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: #7c7c7c;
+}
+
+#topmenu ul li a.laatstemenu {
+    border-right: 0px;
+}
+
+.top {
+    position:relative;
+}
+
+#logo {
+    float: left;
+
+    padding:0;
+}
+
+
+.inhoud img {
+    float:left;
+    margin-top:-50px;
+    margin-right:2em;
+    width:230px;
+    height:auto;
+}
+
+header nav {
+    float: right;
+}
+
+.titel p {
+    width:60%;
+}
+
+.kol {
+
+
+    width:29%;
+}
+
+.kolwaar {
+    width:68%;
+}
+
+.kolwaar p{
+    width:100%;
+}
+
+.kolwaar p:first-of-type{
+    margin-top: 0; 
+}
+
+.drie ul{
+    list-style-type: none;
+    margin-top:0;
+}
+
+.een {
+    float:left;
+}
+
+.twee {
+    float:left;
+    margin:0 0 0 20px;
+}
+
+.drie {
+    float:right;
+}
+
+.nieuws img {
+    float:right;
+}
+
+.titel img {
+    border: 5px solid #E9DCE9;
+    margin: 1em 1em;
+    width:300px;
+    height:auto;
+    position:absolute;
+    bottom:0;
+    right:0;
+
+}
+
+.kol .crop {
+
+}
+
+.kolwaar img {
+    border: 1px solid #E9DCE9;
+    margin: 0;
+    position:relative;
+    height:458px;
+    width:auto;
+
+}
+
+.crop {
+    position:relative;
+    height:100%;
+    width:100%;
+
+}
+
+.crop img:first-child {
+    top:-75px;   
+    left:-150px; 
+    border: 1px solid #E9DCE9;
+    margin:0 0;
+    width:450px;
+    height:auto;
+    position:absolute;
+    clip:rect(75px,300px, 375px, 150px);
+
+
+}
+
+.crop img:nth-child(2) {
+    top:307px;   
+    left:0; 
+    border: 1px solid #E9DCE9;
+    margin:0 0;
+    width:450px;
+    height:auto;
+    position:absolute;
+    clip:rect(0,100px, 150px, 0px);
+}
+.crop img:nth-child(3) {
+    top:307px;   
+    left:109px; 
+    border: 1px solid #E9DCE9;
+    margin:0 0;
+    width:300px;
+    height:auto;
+    position:absolute;
+    clip:rect(0,200px, 150px, 0px);
+}
+.crop img:nth-child(4) {
+    top:0px;   
+    left:158px; 
+    border: 1px solid #E9DCE9;
+    margin:0 0;
+    width:300px;
+    height:auto;
+    position:absolute;
+    clip:rect(0,150px, 300px, 0px);
+}
+
+/*
+
+EERSTE ZELF GEPRUTSTE FORM
+
+.contact label {
+
+    float: left;
+    width: 150px;
+    text-align: left;
+
+}
+
+
+
+.contact label.labelCheckbox {
+    float:none;
+
+}
+
+.knop {
+    margin: 1em 0 0 151px;
+
+}
+
+.contact input[type=text] {
+  width:250px;
+}
+
+.contact input[type=email] {
+  width:250px;
+}
+
+.contact textarea {
+  width:248px;
+  height:80px;
+  
+}
+
+.contact > * {
+    margin-top:4px;
+}
+
+*/
+
+/*** DEFTIGE FORM ***/
+
+form div {
+    position: relative;
+    clear: left;
+    display: block;
+    zoom: 1;
+    margin: 0.2em 0;
+    padding: 0;
+}
+
+/****** velden, controls ******/
+
+.contact input[type="email"],
+.contact input[type="text"] {
+    width: 19.7em;
+    min-height:1em;
+    padding: 0.4em 0.5em;
+    margin:0;
+    font-size:inherit;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+textarea {
+    font-family: inherit;
+    font-size:inherit;
+    width: 19.7em;
+    min-height:1em;
+    padding: 0.4em 0.5em;
+    margin:0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+
+
+
+
+
+label {
+    /* algemeen, losse labels */
+    float:none;
+    display:inline;
+    min-height: 0.875em;
+    padding: 0.3em 0;
+    margin:0;
+    font-size: 1em;
+    text-align: left;
+}
+
+form div label {
+    /* labels in div */
+    float: left;
+    font-size: 1em;
+    display: inline-block;
+    width: 10em;
+    margin: 0;
+    padding-right: 1em;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+.inhoud img {
+    border: 5px solid #E9DCE9; 
+}
+
+.bigtop {
+    padding: 1em 0 0.5em 0;
+}
+
+footer {
+    clear: both;
+    padding: 1em 3em 0;
+    border-top: 1px solid silver;
+
+}
+
+.titel {
+    display:block;
+    position:relative;
+    padding: 0 0 3em 0;
+
+}
+
+.wie ul {
+    overflow:auto;
+}
+
+.wie ul li {
+    display:block;
+    float:left;
+
+    padding:0.35em 1.2em;
+    margin:0.35em 1.2em;
+    width:160px;
+}
+
+.wie ul li {
+    text-align:right;
+    margin-right:3em;
+
+}
+
+.wie ul li:nth-child(2n+0){
+    text-align:left;
+    margin-right:0px;
+}
+
+img.draairechts{
+    transform:rotate(9deg);
+    -ms-transform:rotate(9deg); /* IE 9 */
+    -webkit-transform:rotate(9deg); /* Opera, Chrome, and Safari */   
+}
+
+
+img.draailinks{
+    transform:rotate(-9deg);
+    -ms-transform:rotate(-9deg); /* IE 9 */
+    -webkit-transform:rotate(-9deg); /* Opera, Chrome, and Safari */   
+}
+
+
+.wie ul li h3:first-of-type{
+    color:black;
+}
+
+.wie img {
+    border: 5px solid #E9DCE9;
+    width:120px;
+    height:auto;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Floaten van List */
+
+.inhoud ul {
+    float:left;   
+}
+
+.inhoud ul li{
+    float:left;
+    width:28%;
+    height:130px;
+    padding: 0 2em 0 1em;
+}
+
+.container .waar {
+    padding:0;
+}
+
+
+
+
+
+/***  TYPOGRAFIE ***/
+
+.container, footer {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;	
+}
+
+header a {
+    font-weight:bold;
+}
+
+header ul {
+    margin: 0.5em;
+    padding: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+
+}
+
+body {
+    
+    font-size:100%
+}
+
+p.schuin {
+    font-style:italic;
+}
+
+em {
+    color:#8c3d96;
+    font-weight:bold;
+    font-style:normal;
+}
+
+footer :nth-child(2){
+    font-style:italic;
+}
+
+
+
+
+
+
+/***  KLEUREN ***/
+
+
+h1, h2 {
+    color:#7ea107;
+}
+
+h1 {
+    font-family:source_sans_proregular;
+    font-size:3em;
+    font-weight:bold;
+}
+
+.titelinhoud h2 {
+    color:black;
+    font-style:italic;
+}
+
+.inhoud ul {
+    list-style-image:url(../../img/check.png);
+}
+
+a {
+    color:#4C86CF;
+}
+
+#login {
+    color:white;
+}
+
+input[type=submit],
+button {
+    background-color:#6d9207;
+    color:white; 
+    border:none;
+    width:120px;
+    height:22px;
+    font-weight:bold;
+
+}
+
+
+input[class=knop],
+button{
+    text-transform: uppercase;
+    border-style:outset;
+    background-color:#9fc33f;
+    color:white;
+    height:3em;
+    margin-top:0.5em;
+
+
+}
+
+#form {
+    padding-bottom:1em;
+}
+
+header a {
+    color:#52463f;
+}
+
+
+a:hover {
+    color:#058;
+}
+
+#login {
+    background-color: #8FB209;
+}
+
+.container, .bigtop {
+    background-color:#fbfaf8;
+
+}
+
+
+
+
+.biginhoud {
+    background-color:#ece8e5;
+    border-top: 1px solid #dbdad8;
+    border-bottom: 1px solid #dbdad8;
+
+}
+
+.titelinhoud {
+    border-top: 1px solid #dbdad8;
+}
+
+#topmenu ul li a:hover,
+#topmenu ul li a:active
+{
+
+    text-decoration:none;
+    background:#7c7c7c;
+    color:white;
+}
+
+#active .active {
+    text-decoration:none;
+    background:#7c7c7c;
+    color:white;
+}
+
+
+
+/*
+div, nav, header, footer, article {
+    outline:1px dashed red;
+}
+
+*/
+
+.wie ul {
+    padding-left:0px;
+}
+
+
+
+
+/* clearfix hack */
+
+.clearFix:before, .clearFix:after {
+    content: " ";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+/* enkel voor IE 6/7 */
+
+.clearFix {
+    *zoom: 1;
+}
+

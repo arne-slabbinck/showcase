@@ -1,0 +1,608 @@
+
+@charset "utf-8";
+/*
+CSS voor Webontwikkelaar, een Responsive, Mobile First taak
+*/
+
+
+/******* ALGEMEEN + MOBILE FIRST *******/
+
+
+body, div, article, section {
+    margin:0;
+    padding:0;
+    background-color:#fbfaf8;
+}
+
+body {
+    font: 16px/1.4 "Lucida Grande", Sans-Serif;     /* 1em = 16px */
+    color:#333333;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+h3,h2 {
+    font-size: 1.125em;                             /* 18 px */
+    padding: 0 0.3333em; 
+
+}
+
+header {
+    position:relative;
+}
+
+section {
+    clear:both;
+}
+
+p {
+
+    margin-left:0.375em;                            /* 6px */
+}
+
+.container {
+    overflow:auto;
+}
+
+
+/******** LOGIN mobile first ********/
+
+#login {
+    width:auto;
+    margin: 0.3em 0.3em;
+    font-family:inherit;
+    color:#333333;
+    font-size:0.9em;
+
+}
+
+#login > input {
+    display:inline-block;
+    width:30%;
+
+
+}
+
+#login > * {
+
+}
+
+input[type=submit] {
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    border:1px solid #dcdcdc;
+    height:28px;
+
+
+
+}
+
+input[type=text],
+input[type=password]
+{
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+    border:1px solid #dcdcdc;
+    height:25px;
+    padding-left:0.2em;
+
+}
+
+
+
+/******* LOGO *******/
+
+#logo {
+    padding:0 auto;
+
+}
+
+#logo img {
+    display:block;
+    margin: 1em auto;
+}
+
+
+
+/******* HELPER CLASSES *********/
+
+.hide {
+    display:none;
+}
+
+.phone-hide {
+    display:none;
+}
+.phone-hide2 {
+    display:none;
+}
+
+
+
+
+
+
+/******** HOOFDMENU mobile first ********/
+/*
+vertikaal menu
+container bepaalt breedte van list */
+
+#hoofdmenu {
+    list-style:none;
+    font-size: 0.875em;                     /* 14px = 1em */
+    font-weight:bold;
+    padding:0;                              /* 0.5em = 6px */
+    margin:5em 1em 1em;
+    width:auto;
+}
+
+#hoofdmenu li {
+    display:block;                          /* onder elkaar */
+    margin:0;
+    padding: 0.4286em 1.1428em;             /* 6px 16px */
+    border-bottom:1px solid silver;
+    border-left:1px solid silver;
+    border-right:1px solid silver;
+}
+
+#hoofdmenu li:first-child {
+    border-top:1px solid silver;
+}
+
+#hoofdmenu a {
+    display:inline;
+    cursor:pointer;
+}
+
+#hoofdmenu li:hover {
+
+    background-color:#ece8e5;
+}
+
+#kopnav {
+    padding-top:1em;
+
+}
+
+
+/***** TITEL naar boven *****/
+
+header {
+
+}
+
+#kop h1 {
+    font-size: 2em;             /* 32px = 1em */
+    position: absolute;
+    top: 1.1em;                 /* 96px */
+    left: 0;
+    margin: 0 0.5em;            /* 16px */
+
+}
+
+#kop h2 {
+    font-size: 1.5em;             /* 32px = 1em */
+    position: absolute;
+    top: 3em;                 /* 96px */
+    left: 0;
+    margin: 0 1em;            /* 16px */
+}
+
+
+/** inhoud **/
+
+#inhoud h3 {
+
+}
+
+#waarom h2 {
+    color:#7ea107;
+}
+
+article >p:first-child {
+    font-style:italic;
+    background:#ece8e5;
+    margin-bottom:0.1em;
+    width:auto;
+    margin-right:0.3em;
+}
+
+article >h3 {
+    margin-top:0.1em;
+}
+
+#nieuws p {
+    margin-right:0.3em;
+}
+
+#nieuws h2, #waarom h2 {
+    font-size:1.8em;
+    color:#7ea107;
+}
+
+#nieuws a {
+    color:#4C86CF;
+}
+
+#kop {
+    width:100%; 
+}
+
+#kop p{
+    width:80%;
+    margin:0 auto;
+    font-style:italic;
+    text-align:center;
+}
+
+
+
+/***** LIST *****/
+
+
+#waarom ul {
+    list-style-type:none;
+    font-size:0.9em;                /* 12px = 1em */
+    width:100%;
+    margin:0;
+    padding: 0.5em 0;               /* 0.5em = 6px */
+    background:#ece8e5;
+}
+
+
+#waarom ul li {
+    padding: 0 0 0.9em 2em;
+    margin: 0.5em;
+    background: transparent url(../../img/check.png) 0 0 no-repeat;
+
+}
+
+
+/**** footer ****/
+
+footer {
+    text-align:center;
+    font-style:italic;
+    font-size:0.8em;
+    width:100%;
+
+}
+
+footer > div {
+    background:#ece8e5;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/* TABLETS */
+
+@media screen and (min-width:361px){
+
+    /* helper classes */
+
+    .phone-hide {
+        display:block;
+    }
+    .phone-hide2 {
+        display:inline;
+    }
+
+
+    /** FORM align right **/
+
+    #loginnav {
+        overflow:auto;
+        width:100%
+    }
+    
+    #login {
+        float:right;
+        text-align:right;
+        
+        
+    }
+
+    #login > input {
+        width:30%;
+      
+    }
+
+    #login input[type=submit] {
+        width:25%;
+       
+    }
+
+
+
+
+
+    /**  LOGO **/
+
+    #logo{
+
+
+    }
+
+    #logo a > img {
+        display:inline-block;
+        float:left;
+        min-width:10em;
+        max-width:50%;
+        margin:0;
+
+    }
+
+
+
+    /** MENU **/
+
+    #kopnav {
+        overflow:auto;
+        padding-top:0;
+    }
+
+    #hoofdmenu {
+        float:right;
+        padding-top:0;
+        margin-bottom:0.5em;
+        margin-right:0em;
+    }
+
+    #hoofdmenu li {
+        display:inline-block;
+        border:0px;
+        border-left:1px solid #ECE8E5;
+
+    }
+
+    #hoofdmenu li:first-child {
+        border:0px;
+    }
+
+    /** header **/
+
+    header {
+        border-bottom: 1px solid #ECE8E5;
+    }
+
+
+    /*********** JUMBOTRON **************/
+
+    #webdevelopper {
+        display:none;
+    }
+
+    #kop > p {
+        margin-left:0;
+        text-align:left;
+    }
+
+    #kop {
+        margin-bottom:3em;
+    }
+
+    .wikkel {
+        margin-left:2em;
+        margin-right:2em;
+    }
+
+    #kop h1 {
+        color:#7ea107;
+        margin:0;
+    }
+
+    #kop h2 {
+        margin:0.8em 0 0 0;
+        padding:0;
+    }
+
+    #waarom h2 {
+        padding:0;
+    }
+
+    #kop h3 {
+        padding:0;
+        margin-top:0.6em;
+    }
+
+
+
+    #waarom img {
+        border: 5px solid #E9DCE9;
+        float:left;
+        margin-top:-1.5em;
+        margin-right:1.5em;
+
+    }
+
+
+    /** INHOUD **/
+
+
+    #inhoud {
+        padding-top:1em;
+    }
+
+    #kop h1, h2 {
+        position:static;
+    }
+
+
+    #kop h2:first-of-type {
+        position:static;
+    }
+
+    .grijs {
+        background:#ece8e5;
+        border-top:1px solid silver;
+        border-bottom:1px solid silver;
+    }
+
+    #waarom {
+        background:#ece8e5;
+
+    }
+
+    /*** List in kolommen ***/
+
+    /*
+    #opsomming li {
+        width:26%;
+        float:left;
+    }
+    */
+
+    #opsomming {
+        display:-webkit-flex;
+        display:-moz-flex;
+        display:flex;
+        -webkit-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+
+    }
+
+    #opsomming li {
+        width: 27%;
+    }
+
+
+    /**** NIEUWS ****/
+
+    #nieuws article > p {
+        background-color:inherit;
+    }
+    
+    article >p:first-child {
+        font-style:normal;
+        font-size:0.8em;
+        margin-bottom:1em;
+        
+    }
+
+    #nieuws h2 {
+        padding-left:0;
+        margin-bottom:0.5em;
+    }
+
+    #nieuws article {
+        float:left;
+        width:28%;
+    }
+    
+    #nieuws article:nth-of-type(2) {
+        margin-left:4em;
+        
+    }
+
+    #nieuws article:last-child {
+        float:right;
+    }
+
+
+    /*
+    
+    #nieuws article {
+        float:left;
+        width:30%;
+    }
+    
+    #nieuws article:last-of-type{
+        float:right;
+    }
+    
+    #nieuws img {
+        float:right;
+    }
+    */
+
+
+
+
+
+
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:740px) {
+
+    #kop {
+        position:relative;
+    }
+
+    #kop > img {
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+
+    #kop img {
+        border: 5px solid #E9DCE9;
+        border-radius:0.2em;
+        float:right;
+        max-width:60%;
+    }
+
+    #kop > p {
+        position:relative;
+        z-index:1;
+    }
+
+    #webdevelopper {
+
+        position:absolute;
+        display:inline;
+        bottom:0;
+        right:0;
+        z-index:0;
+
+
+    }
+    
+    footer {
+        text-align:left;
+    }
+    
+    
+    /***** DESKTOP *****/
+    
+}
+    @media screen and (min-width:1025px) {
+    
+        .wikkel {
+            max-width:1024px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+    
+    
+}
+
+
+
+
+
